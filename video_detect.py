@@ -153,9 +153,10 @@ while (capture.isOpened()):
             np.savetxt('C:/Users/owNer/Desktop/CCTV/cctvServer/Mask_RCNN/roi.txt', r['rois'], fmt='%d', delimiter=",")
         """
         save_roi = r['rois'].astype(int)
-        save_rois = np.concatenate(save_roi).tolist()
-        with open(MASK_ROOT / 'roi.txt', 'a') as text_f:
-            text_f.write(str(save_rois))
+        if len(save_roi) > 0:
+            save_rois = np.concatenate(save_roi).tolist()
+            with open(MASK_ROOT / 'roi.txt', 'a') as text_f:
+                text_f.write(str(save_rois))
         #강 여러개일때 고려
         with open(MASK_ROOT / 'roi.txt', 'a') as text_f:
             text_f.write("\n")
