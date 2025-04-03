@@ -88,7 +88,8 @@
 
 ### 동작 영상
 
-![result_2.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/27194ccb-9a11-4b3c-91b0-d628a60cd162/782cb84c-abc3-49ca-b35c-5a0d8aaf3eef/result_2.gif)
+![result_2](https://github.com/user-attachments/assets/8bc9c2f7-9aeb-4279-a8db-0c90b4e885a3)
+
 
 - [ ]  강 영역 탐지 코드 일부
 
